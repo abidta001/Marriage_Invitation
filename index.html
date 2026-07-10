@@ -1,5 +1,6 @@
 <!doctype html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
-<title>Luxury Indian Wedding Invitation</title>
+<title>Manek ❤︎ Anagha </title>
+<link rel="icon" type="image/png" href="images/ma copy.png">
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -326,26 +327,7 @@ section{min-height:100vh;padding:90px 8%;display:flex;flex-direction:column;just
         padding:0 20px;
     }
 }
-.hero::before{
-    content:"";
-   filter:blur(2px) brightness(.7);
-    position:absolute;
-    inset:0;
 
-    background-image:
-        linear-gradient(rgba(40,20,10,.55), rgba(40,20,10,.55)),
-        url("images/couple.jpg");   /* Your image */
-
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-
-    opacity:.35;        /* Adjust 0.2–0.5 as needed */
-
-    transform:scale(1.08);
-
-    animation:zoom 18s ease-in-out infinite alternate;
-}
 .script{
     font-family:"Great Vibes", cursive;
     font-size:4rem;
@@ -448,6 +430,447 @@ img{width:100%;border-radius:24px;transition:.6s}img:hover{transform:scale(1.05)
     text-align: center;
     color: #555;
 }
+.muhurtham{
+    position:relative;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:100px 8%;
+    overflow:hidden;
+
+    background:
+        linear-gradient(
+            rgba(250,246,238,.30),
+            rgba(250,246,238,.40)
+        ),
+        url("images/temple.png");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+
+
+
+@keyframes rotateMandala{
+
+from{
+transform:rotate(0deg);
+}
+
+to{
+transform:rotate(360deg);
+}
+
+}
+
+.muhurtham-card{
+    position:relative;
+    z-index:3;
+
+    width:100%;
+    max-width:1100px;
+
+    padding:60px;
+
+    border-radius:30px;
+    overflow:hidden;
+
+    background:
+        linear-gradient(
+            rgba(255,255,255,.45),
+            rgba(255,255,255,.55)
+        ),
+        url("images/mandala.png");
+
+    background-size:contain;
+    background-position:center;
+
+    backdrop-filter:blur(3px);
+
+    border:1px solid rgba(212,175,55,.45);
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.18);
+}
+
+.muhurtham-card::before{
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:url("images/mandala.png") center no-repeat;
+
+    background-size:520px;
+
+    opacity:.12;
+
+    z-index:0;
+
+    pointer-events:none;
+}
+
+.muhurtham-title{
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+}
+
+.muhurtham-title h5{
+
+    color:#b8860b;
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    margin-bottom:8px;
+
+}
+
+.muhurtham-title h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:3.5rem;
+
+    color:#5b3925;
+
+}
+
+.muhurtham-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+
+}
+
+.m-item{
+
+    padding:35px 25px;
+
+    border-radius:22px;
+
+    background:
+        linear-gradient(
+            rgba(255,255,255,.60),
+            rgba(255,255,255,.68)
+        ),
+        url("images/muhurtham-bg.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    border:1px solid rgba(212,175,55,.25);
+
+    transition:.4s;
+}
+
+.m-item:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.18);
+
+}
+.muhurtham-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:radial-gradient(
+        circle,
+        rgba(255,255,255,.15),
+        rgba(255,255,255,.02)
+    );
+
+    pointer-events:none;
+}
+
+.m-item i{
+
+    font-size:2.5rem;
+
+    color:#D4AF37;
+
+    margin-bottom:15px;
+
+}
+
+.m-item h3{
+
+    color:#7c5521;
+
+    margin-bottom:12px;
+
+}
+
+.m-buttons{
+
+    margin-top:45px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.m-btn{
+
+    padding:15px 30px;
+
+    border-radius:40px;
+
+    text-decoration:none;
+
+    background:#D4AF37;
+
+    color:white;
+
+    transition:.4s;
+
+}
+
+.m-btn:hover{
+
+    transform:translateY(-5px);
+
+    background:#b8860b;
+
+}
+
+.m-outline{
+
+    background:white;
+
+    color:#7c5521;
+
+    border:2px solid #D4AF37;
+
+}
+
+.m-outline:hover{
+
+    background:#D4AF37;
+
+    color:white;
+
+}
+/* =====================
+   MOBILE
+===================== */
+
+@media (max-width:768px){
+
+.muhurtham{
+
+    padding:60px 20px;
+
+}
+
+.muhurtham-card{
+
+    padding:30px 20px;
+
+}
+
+.muhurtham-title h2{
+
+    font-size:2.2rem;
+
+}
+
+.muhurtham-title h5{
+
+    font-size:13px;
+
+    letter-spacing:2px;
+
+}
+
+.muhurtham-grid{
+
+    grid-template-columns:1fr;
+
+    gap:18px;
+
+}
+
+.m-item{
+
+    padding:22px;
+
+}
+
+.m-item i{
+
+    font-size:2rem;
+
+}
+
+@media (max-width:768px){
+
+    .m-buttons{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:15px;
+        width:100%;
+    }
+
+    .m-btn{
+        width:100%;
+        max-width:320px;
+        text-align:center;
+        box-sizing:border-box;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        gap:10px;
+    }
+
+}
+
+.card-mandala img{
+
+    width:480px;
+
+    opacity:.10;
+
+    filter:drop-shadow(0 0 15px rgba(212,175,55,.25));
+
+    animation:rotateMandala 120s linear infinite;
+
+}
+
+}
+/* ==========================
+   RECEPTION - MOBILE
+========================== */
+
+@media (max-width:768px){
+
+    .venue-highlight{
+        margin-top:30px;
+        width:100%;
+    }
+
+    .venue-box{
+        padding:25px 18px;
+        border-top:1px solid rgba(212,175,55,.3);
+    }
+
+    .venue-tag{
+        font-size:12px;
+        letter-spacing:2px;
+    }
+
+    .venue-box h2{
+        font-family:'Cormorant Garamond',serif;
+        font-size:2rem;
+        margin:10px 0;
+    }
+
+    .venue-box p{
+        font-size:.95rem;
+        line-height:1.7;
+    }
+
+    .venue-note{
+        margin:18px 0 25px;
+        font-size:.9rem;
+    }
+
+    .venue-line{
+        width:70px;
+        margin:18px auto;
+    }
+
+    /* Stack buttons */
+    .venue-box .m-buttons{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:15px;
+    }
+
+    .venue-box .m-btn{
+        width:100%;
+        max-width:300px;
+        text-align:center;
+    }
+
+}
+.venue-highlight{
+    width:100%;
+    margin-top:45px;
+}
+
+.venue-box{
+    padding:35px;
+    border-top:1px solid rgba(212,175,55,.3);
+    text-align:center;
+}
+
+.venue-tag{
+    display:block;
+    margin-bottom:10px;
+}
+
+.venue-line{
+    width:90px;
+    height:1px;
+    background:#d4af37;
+    margin:18px auto;
+}
+
+.venue-box h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size:3rem;
+    color:#5b3925;
+    margin:0;
+}
+
+.venue-box p{
+    color:#6b5a4d;
+    font-size:1.05rem;
+    line-height:1.8;
+}
+
+
+
+.venue-note{
+    font-style:italic;
+    margin-bottom:30px;
+}
+
+@media(max-width:768px){
+
+    .venue-box{
+        padding:35px 25px;
+    }
+
+    .venue-box h2{
+        font-size:2.2rem;
+    }
+
+}
 .fade{opacity:0;transform:translateY(50px);transition:1s}.show{opacity:1;transform:none}
 .petal{
     position:fixed;
@@ -474,7 +897,7 @@ img{width:100%;border-radius:24px;transition:.6s}img:hover{transform:scale(1.05)
 @keyframes fall{to{transform:translateY(110vh) rotate(720deg)}}
 @media(max-width:700px){.hero h1{font-size:2.3rem}.script{font-size:42px}}
 </style></head><body>
-<nav><a href=#home>Home</a><a href=#story>Story</a><a href=#details>Details</a></nav>
+<nav><a href=#home>Home</a><a href=#story>Story</a><a href=#muhurtham_fade>Muhurtham</a></nav>
 <section id="home" class="hero">
 
     <!-- Background Image -->
@@ -499,7 +922,7 @@ img{width:100%;border-radius:24px;transition:.6s}img:hover{transform:scale(1.05)
         </p>
 
         <h2 id="c"></h2>
-        <a class="btn" href="#details">
+        <a class="btn" href="#muhurtham_fade">
             Open Invitation
         </a>
 
@@ -547,65 +970,87 @@ img{width:100%;border-radius:24px;transition:.6s}img:hover{transform:scale(1.05)
     </div>
 
 </section>
-<section id="details" class="fade">
+<section id="muhurtham_fade">
 
-    <h2>Wedding Details</h2>
+    <div class="muhurtham-card">
 
-    <div class="details-grid">
+        <div class="muhurtham-title">
 
-        <!-- Temple -->
-        <div class="detail-card full-width">
-            <i class="fa-solid fa-gopuram detail-icon"></i>
-            <h3>Thalikettu</h3>
-            <p>
-                <strong>Cheeramkulam Bagavathi Kshethram</strong><br>
-                Kunnamkulam<br>
-                Thrissur, Kerala
-            </p>
+            <h5>The Sacred Ceremony</h5>
+
+            <h2>Muhurtham</h2>
+
         </div>
 
-        <!-- Date -->
-        <div class="detail-card">
-            <i class="fa-regular fa-calendar-days detail-icon"></i>
-            <h3>Date</h3>
-            <p>Sunday</p>
-            <h4>30 August 2026</h4>
+        <div class="muhurtham-grid">
+
+            <div class="m-item">
+                <i class="fa-regular fa-calendar-days"></i>
+                <h3>Date</h3>
+                <p>Sunday</p>
+                <strong>30 August 2026</strong>
+            </div>
+
+            <div class="m-item">
+                <i class="fa-regular fa-clock"></i>
+                <h3>Time</h3>
+                <strong>08:45 – 09:30 AM</strong>
+            </div>
+
+            <div class="m-item">
+                <i class="fa-solid fa-gopuram"></i>
+                <h3>Venue</h3>
+                <p>Cheeramkulam Bhagavathi Temple</p>
+                <p>Kunnamkulam, Thrissur</p>
+            </div>
+
         </div>
+        <div class="venue-highlight">
 
-        <!-- Time -->
-        <div class="detail-card">
-            <i class="fa-regular fa-clock detail-icon"></i>
-            <h3>Muhurtham</h3>
-            <h4>08:45 - 09:30 AM</h4>
-        </div>
+    <div class="venue-box">
 
-        <!-- Reception -->
-        <div class="detail-card full-width">
-            <i class="fa-solid fa-building-columns detail-icon"></i>
-            <h3>Reception Venue</h3>
-            <p>
-                Sheikh Palace<br>
-                Chemmannur
-            </p>
-        </div>
+        <span class="venue-tag">Auditorium</span>
 
-        <!-- QR Code -->
-        <div class="detail-card full-width qr-card">
+        <h2>Sheikh Palace Convention Centre</h2>
 
-            <h3>Scan for Directions</h3>
+        <p>Chemmanur, Thrissur</p>
 
-            <img src="images/QR Code (1).jpeg" alt="QR Code" class="qr">
+        <div class="venue-line"></div>
 
-            <a href="https://maps.app.goo.gl/5bAkRv3q1mEkRy2B7" class="btn" target="_blank">
-                <i class="fa-solid fa-location-dot"></i>
-                Open Google Maps
-            </a>
+        <p class="venue-note">
+            Reception to follow after the wedding ceremony.<br>
+            We request the pleasure of your company.
+        </p>
+
+       <div class="m-buttons">
+
+    <a href="https://maps.app.goo.gl/8ea8QQn3rcnjV4pUA" class="m-btn" target="_blank">
+        <i class="fa-solid fa-location-dot"></i>
+        View Location
+    </a>
+
+    <a class="m-btn m-outline"
+       target="_blank"
+       href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Manek+%26+Anagha+Wedding">
+        <i class="fa-solid fa-calendar-plus"></i>
+        Add to Calendar
+    </a>
+
+</div>
+
+    </div>
+
+</div>
+
+            
 
         </div>
 
     </div>
+    
 
 </section>
+
 <p class="invite-message">
     We warmly invite you to celebrate our special day with your presence and blessings.
 </p>
