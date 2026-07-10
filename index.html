@@ -11,7 +11,6 @@ body:before{content:"";position:fixed;inset:0;background:radial-gradient(circle 
 nav{position:fixed;top:0;width:100%;backdrop-filter:blur(10px);padding:15px;text-align:center;z-index:9}
 a{color:#edede6;text-decoration:none;margin:0 12px}
 section{min-height:100vh;padding:90px 8%;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
-.hero h1{font:700 4rem Cinzel}.script{font:64px 'Great Vibes';color:#b68b2c}
 .story-container{
     display:grid;
     grid-template-columns:1fr 1fr;
@@ -19,11 +18,7 @@ section{min-height:100vh;padding:90px 8%;display:flex;flex-direction:column;just
     align-items:center;
     margin-top:40px;
 }
-.person-name{
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 2.5rem;
-    font-weight: 600;
-}
+
 .story-image img{
     width:100%;
     border-radius:24px;
@@ -56,12 +51,6 @@ section{min-height:100vh;padding:90px 8%;display:flex;flex-direction:column;just
 }
 
 
-.hero{
-    position:relative;
-    min-height:100vh;
-
-    display:flex;
-}
 
 .detail-card{
     background:rgba(255,255,255,.45);
@@ -153,103 +142,50 @@ section{min-height:100vh;padding:90px 8%;display:flex;flex-direction:column;just
 
 @media (max-width:768px){
 
-    nav{
-        padding:12px 5px;
+    .muhurtham{
+        padding:60px 20px;
     }
 
-    nav a{
-        margin:0 8px;
-        font-size:.9rem;
+    .muhurtham-card{
+        padding:30px 20px;
     }
 
-    section{
-        min-height:auto;
-        padding:70px 20px;
+    .muhurtham-title h2{
+        font-size:2.2rem;
     }
 
-    .hero{
-        min-height:100vh;
-    }
-.hero-image img{
-        object-fit: cover;
-        object-position: 25% center; /* Try 50%, 55%, 60%, 65% */
-    }
-    .hero h1{
-        font-size:2.4rem;
-        line-height:1.3;
+    .muhurtham-title h5{
+        font-size:13px;
+        letter-spacing:2px;
     }
 
-    .script{
-        font-size:2.6rem;
+    .muhurtham-grid{
+        grid-template-columns:1fr;
+        gap:18px;
     }
 
-    .hero-content p{
-        font-size:1rem;
-        line-height:1.8;
+    .m-item{
+        padding:22px;
     }
 
-    .btn{
-        padding:12px 24px;
-        font-size:.95rem;
-    }
-
-    .story-image img{
-        border-radius:18px;
-    }
-
-    .person{
-        padding:20px;
-    }
-
-    .person-name{
+    .m-item i{
         font-size:2rem;
     }
 
-    .person p{
-        font-size:.95rem;
-    }
-
-    .details-grid{
-        display:grid;
-        grid-template-columns:repeat(2,1fr);
+    .m-buttons{
+        flex-direction:column;
+        align-items:center;
         gap:15px;
+        width:100%;
     }
 
-    .detail-card{
-        padding:20px 15px;
-    }
-
-    .detail-icon{
-        font-size:2rem;
-        margin-bottom:10px;
-    }
-
-    .detail-card h3{
-        font-size:1.1rem;
-    }
-
-    .detail-card h4{
-        font-size:1rem;
-    }
-
-    .detail-card p{
-        font-size:.85rem;
-        line-height:1.6;
-    }
-
-    /* Only the QR card occupies full width */
-    .qr-card{
-        grid-column:1 / -1;
-    }
-
-    .qr{
-        width:140px;
-    }
-
-    .qr-card .btn{
-        width:fit-content;
-        margin:auto;
-        margin-top:15px;
+    .m-btn{
+        width:100%;
+        max-width:320px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        gap:10px;
     }
 
 }
@@ -337,14 +273,17 @@ section{min-height:100vh;padding:90px 8%;display:flex;flex-direction:column;just
         0 5px 15px rgba(0,0,0,.45);
 }
 
+/* ==========================
+   HERO SECTION
+========================== */
+
 .hero{
     position:relative;
     min-height:100vh;
-    overflow:hidden;
-
     display:flex;
     justify-content:center;
     align-items:center;
+    overflow:hidden;
 }
 
 .hero-image{
@@ -357,46 +296,105 @@ section{min-height:100vh;padding:90px 8%;display:flex;flex-direction:column;just
     width:100%;
     height:100%;
     object-fit:cover;
-
+  object-position:60% center;
     opacity:.35;
-
     transform:scale(1.08);
-
     animation:heroZoom 18s ease-in-out infinite alternate;
 }
 
 .hero-overlay{
     position:absolute;
     inset:0;
-
-    background:
-    linear-gradient(
+    background:linear-gradient(
         rgba(20,10,5,.45),
         rgba(20,10,5,.55)
     );
-
     z-index:2;
 }
 
 .hero-content{
     position:relative;
     z-index:3;
-
-    text-align:center;
-    color:white;
-
     max-width:900px;
     padding:20px;
+    color:#fff;
+    text-align:center;
 }
 
 @keyframes heroZoom{
-
     from{
         transform:scale(1.08);
     }
-
     to{
         transform:scale(1.15);
+    }
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media (max-width:992px){
+
+    .hero{
+        min-height:90vh;
+    }
+
+    .hero-image img{
+        object-position: 30% center;
+        transform:scale(1.05);
+    }
+
+    .hero-content{
+        padding:25px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .hero{
+        min-height:100vh;
+    }
+
+    .hero-image img{
+        object-fit:cover;
+        object-position: 30% center;
+        transform:scale(1);
+    }
+
+    .hero-content{
+        width:90%;
+        padding:15px;
+    }
+
+    .hero h1{
+        font-size:2.5rem;
+    }
+
+    .script{
+        font-size:2.8rem;
+    }
+
+}
+
+@media (max-width:480px){
+
+    .hero-image img{
+        object-position: 30% center;
+    }
+
+    .hero h1{
+        font-size:2rem;
+    }
+
+    .script{
+        font-size:2.2rem;
+    }
+
+    .hero-content p{
+        font-size:.95rem;
+        line-height:1.8;
     }
 
 }
@@ -431,87 +429,46 @@ img{width:100%;border-radius:24px;transition:.6s}img:hover{transform:scale(1.05)
     color: #555;
 }
 .muhurtham{
-    position:relative;
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:100px 8%;
-    overflow:hidden;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 8%;
+    overflow: hidden;
 
     background:
         linear-gradient(
-            rgba(250,246,238,.30),
-            rgba(250,246,238,.40)
+            rgba(250,246,238,.55),
+            rgba(250,246,238,.65)
         ),
         url("images/temple.png");
 
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-    background-attachment:fixed;
-}
-
-
-
-@keyframes rotateMandala{
-
-from{
-transform:rotate(0deg);
-}
-
-to{
-transform:rotate(360deg);
-}
-
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 .muhurtham-card{
     position:relative;
-    z-index:3;
-
-    width:100%;
-    max-width:1100px;
-
-    padding:60px;
-
-    border-radius:30px;
     overflow:hidden;
-
-    background:
-        linear-gradient(
-            rgba(255,255,255,.45),
-            rgba(255,255,255,.55)
-        ),
-        url("images/mandala.png");
-
-    background-size:contain;
-    background-position:center;
-
-    backdrop-filter:blur(3px);
-
-    border:1px solid rgba(212,175,55,.45);
-
-    box-shadow:
-        0 25px 70px rgba(0,0,0,.18);
 }
 
-.muhurtham-card::before{
-    content:"";
-
+.mandala-bg{
     position:absolute;
-
-    inset:0;
-
-    background:url("images/mandala.png") center no-repeat;
-
-    background-size:520px;
-
-    opacity:.12;
-
-    z-index:0;
-
+    top:50%;
+    left:50%;
+    width:450px;
+    transform:translate(-50%,-50%);
+    opacity:.08;
+    animation:rotateMandala 120s linear infinite;
     pointer-events:none;
+    z-index:0;
+}
+
+.muhurtham-card > *:not(.mandala-bg){
+    position:relative;
+    z-index:1;
 }
 
 .muhurtham-title{
@@ -582,22 +539,7 @@ transform:rotate(360deg);
     box-shadow:0 20px 40px rgba(0,0,0,.18);
 
 }
-.muhurtham-card::before{
 
-    content:"";
-
-    position:absolute;
-
-    inset:0;
-
-    background:radial-gradient(
-        circle,
-        rgba(255,255,255,.15),
-        rgba(255,255,255,.02)
-    );
-
-    pointer-events:none;
-}
 
 .m-item i{
 
@@ -746,17 +688,13 @@ transform:rotate(360deg);
     }
 
 }
-
-.card-mandala img{
-
-    width:480px;
-
-    opacity:.10;
-
-    filter:drop-shadow(0 0 15px rgba(212,175,55,.25));
-
-    animation:rotateMandala 120s linear infinite;
-
+@keyframes rotateMandala{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
 }
 
 }
@@ -970,9 +908,11 @@ transform:rotate(360deg);
     </div>
 
 </section>
-<section id="muhurtham_fade">
+<section id="muhurtham_fade" class="muhurtham fade">
+
 
     <div class="muhurtham-card">
+        <img src="images/mandala.png" class="mandala-bg" alt="">
 
         <div class="muhurtham-title">
 
